@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey with God Blessing | Premium Umrah Services</title>
+    
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <style>
+        :root {
+            --royal-blue: #001a33;
+            --gold-glow: #ffd700;
+            --gold-dark: #b8860b;
+            --text-light: #e0e0e0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--royal-blue); color: white; scroll-behavior: smooth; }
+
+        /* --- GLOWING NAVBAR --- */
+        header {
+            position: fixed; width: 100%; top: 0; z-index: 1000;
+            background: rgba(0, 26, 51, 0.95);
+            border-bottom: 2px solid var(--gold-glow);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+        nav {
+            max-width: 1200px; margin: auto; display: flex;
+            justify-content: space-between; align-items: center; padding: 15px 20px;
+        }
+        .logo { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--gold-glow); text-decoration: none; font-weight: bold; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 0.9rem; transition: 0.3s; text-transform: uppercase; }
+        .nav-links a:hover { color: var(--gold-glow); text-shadow: 0 0 10px var(--gold-glow); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=2070') no-repeat center center/cover;
+            display: flex; align-items: center; justify-content: center; text-align: center;
+        }
+        .hero h1 { font-family: 'Amiri', serif; font-size: 5rem; color: var(--gold-glow); text-shadow: 2px 2px 15px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.4rem; margin-bottom: 30px; font-weight: 300; color: var(--text-light); }
+
+        /* --- GLOWING BUTTON --- */
+        .btn-main {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--gold-dark), var(--gold-glow));
+            color: var(--royal-blue); padding: 15px 40px; border: none; border-radius: 50px;
+            font-weight: 700; cursor: pointer; text-transform: uppercase;
+            box-shadow: 0 0 15px var(--gold-glow); transition: 0.4s;
+            text-decoration: none;
+        }
+        .btn-main:hover { transform: scale(1.1); box-shadow: 0 0 30px var(--gold-glow); }
+
+        /* --- SECTIONS --- */
+        section { padding: 100px 20px; max-width: 1200px; margin: auto; }
+        .title { text-align: center; font-family: 'Amiri', serif; font-size: 3rem; color: var(--gold-glow); margin-bottom: 50px; }
+
+        /* --- CARDS --- */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px; border-radius: 20px; border: 1px solid var(--gold-dark);
+            text-align: center; transition: 0.5s; position: relative; overflow: hidden;
+        }
+        .card:hover {
+            background: rgba(184, 134, 11, 0.2);
+            transform: translateY(-15px) rotate(1deg);
+            box-shadow: 0 10px 40px rgba(255, 215, 0, 0.4);
+        }
+        .card i { font-size: 3.5rem; color: var(--gold-glow); margin-bottom: 20px; }
+        .card h3 { margin-bottom: 15px; font-size: 1.6rem; color: var(--gold-glow); }
+
+        /* --- CONTACT INFO --- */
+        .contact-box { text-align: center; background: rgba(255,255,255,0.05); padding: 50px; border-radius: 20px; border: 1px solid var(--gold-glow); }
+
+        /* --- MODAL --- */
+        .modal {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9); z-index: 2000; align-items: center; justify-content: center;
+        }
+        .modal-box {
+            background: var(--royal-blue); padding: 40px; width: 90%; max-width: 600px;
+            border-radius: 20px; border: 2px solid var(--gold-glow); position: relative;
+            animation: bounceIn 0.6s;
+        }
+        .close { position: absolute; right: 20px; top: 20px; color: var(--gold-glow); font-size: 2rem; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">JOURNEY WITH <span>GOD BLESSING</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="About_us.html">About</a></li>
+                <li><a href="Pakeges.html">Packages</a></li>
+                <li><a href="Ziyaret.html">Ziyarat</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="animate__animated animate__zoomIn">
+            <h1>Safar-e-Ishq-o-Aqedat</h1>
+            <p>Premium Umrah & Ziyarat Tours with Unmatched Luxury and Spiritual Peace.</p>
+            <!-- Linked to your Golden Deals page -->
+            <a href="View_Golden_deals.html" class="btn-main">View Golden Deals</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="title">Hamari Pehchan</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-history"></i>
+                <h3>15+ Years Experience</h3>
+                <p>Hum pichle 15 saalo se hazaron pilgrims ki khidmat kar rahe hain behtreen intezam ke sath.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-award"></i>
+                <h3>Award Winning Service</h3>
+                <p>Puri dunya mein humari services ko unki quality aur reliability ki wajah se jana jata hai.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages">
+        <h2 class="title">Premium Packages</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-crown"></i>
+                <h3>Royal Platinum</h3>
+                <p>VIP Hotels, SUV Luxury, Direct Flights, aur Personal Guide.</p>
+                <button class="btn-main" style="padding: 10px 20px; font-size: 0.8rem; margin-top: 15px;" onclick="showModal('Royal Platinum', 'Price: 350,000/- PKR. Full VIP Protocol.')">Check Detail</button>
+            </div>
+            <div class="card">
+                <i class="fas fa-star"></i>
+                <h3>Executive Gold</h3>
+                <p>Premium Hotels near Haram, Shared Luxury Transport, aur Best Food.</p>
+                <button class="btn-main" style="padding: 10px 20px; font-size: 0.8rem; margin-top: 15px;" onclick="showModal('Executive Gold', 'Price: 240,000/- PKR. 4-Star Experience.')">Check Detail</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="ziyarat">
+        <h2 class="title">Muqaddas Ziyarat</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-kaaba"></i>
+                <h3>Makkah Mukarramah</h3>
+                <p>Ghar-e-Hira, Jabal-e-Noor, Jabal-e-Thaur aur Mina ki mukammal ziyarat scholar ke sath.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-mosque"></i>
+                <h3>Madinah Munawwarah</h3>
+                <p>Masjid-e-Quba, Masjid-e-Qiblatain, aur Uhud ke maidan ka safar luxury bus mein.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="title">Raabta Karen</h2>
+        <div class="contact-box">
+            <h3 style="color: var(--gold-glow); margin-bottom: 20px;">Abhi Apna Safar Book Karen</h3>
+            <!-- Updated WhatsApp Info -->
+            <p><i class="fab fa-whatsapp" style="color: #25D366;"></i> +92 344 1810567</p>
+            <p><i class="fas fa-envelope"></i> booking@journeywithgod.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Office #402, Luxury Tower, Karachi.</p>
+            <!-- Direct WhatsApp Button -->
+            <a href="https://wa.me/923441810567?text=Assalam-o-Alaikum%20Journey%20With%20God%20Blessing,%20mujh%20Umrah%20package%20ki%20detail%20chahye." target="_blank" class="btn-main" style="margin-top: 30px;">Chat on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- THE DETAIL MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-box">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="m-title" style="color: var(--gold-glow); font-family: 'Amiri', serif; font-size: 2.5rem;"></h2>
+            <hr style="border: 1px solid var(--gold-dark); margin: 20px 0;">
+            <p id="m-desc" style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;"></p>
+            <!-- Modal Button linked to WhatsApp -->
+            <a id="whatsapp-link" href="#" target="_blank" class="btn-main" style="width: 100%; text-align: center;">Confirm My Interest</a>
+        </div>
+    </div>
+
+    <script>
+        function showModal(title, desc) {
+            document.getElementById('m-title').innerText = title;
+            document.getElementById('m-desc').innerText = desc;
+            
+            // Setting custom message for WhatsApp from Modal
+            let whatsappUrl = "https://wa.me/923441810567?text=Assalam-o-Alaikum, mujh " + title + " ki maloomat chahye.";
+            document.getElementById('whatsapp-link').href = whatsappUrl;
+            
+            document.getElementById('modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+        window.onclick = function(e) { if(e.target == document.getElementById('modal')) closeModal(); }
+    </script>
+
+</body>
+</html>

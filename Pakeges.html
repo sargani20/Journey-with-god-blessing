@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Umrah Packages | Journey with God Blessing</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --royal-blue: #001a33;
+            --gold-glow: #ffd700;
+            --gold-dark: #b8860b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--royal-blue); color: white; line-height: 1.6; overflow-x: hidden; }
+
+        /* Navbar */
+        header {
+            background: rgba(0, 26, 51, 0.98);
+            padding: 20px 8%;
+            border-bottom: 2px solid var(--gold-glow);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--gold-glow); text-decoration: none; }
+        .back-btn { 
+            color: white; text-decoration: none; font-size: 0.9rem; border: 1px solid var(--gold-glow); 
+            padding: 8px 20px; border-radius: 5px; font-weight: 600; transition: 0.3s;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .back-btn:hover { background: var(--gold-glow); color: var(--royal-blue); }
+
+        /* Hero */
+        .packages-hero {
+            padding: 80px 5%; text-align: center;
+            background: linear-gradient(rgba(0,26,51,0.8), rgba(0,26,51,0.8)), url('https://images.unsplash.com/photo-1564769625905-50e9363df7c0?q=80&w=2000');
+            background-size: cover; background-position: center;
+        }
+        .packages-hero h1 { font-family: 'Amiri', serif; font-size: 3rem; color: var(--gold-glow); }
+
+        /* Package Cards Section */
+        section { padding: 60px 8%; }
+        .package-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        
+        .p-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--gold-dark);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: 0.4s;
+            position: relative;
+        }
+        .p-card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+            background: rgba(255, 255, 255, 0.07);
+        }
+        .p-card.featured { border: 2px solid var(--gold-glow); transform: scale(1.05); }
+        .p-card.featured:hover { transform: scale(1.08) translateY(-10px); }
+
+        .price-tag { font-size: 2.5rem; color: var(--gold-glow); font-weight: 700; margin: 20px 0; }
+        .price-tag span { font-size: 1rem; color: white; }
+
+        .p-features { list-style: none; margin-bottom: 30px; text-align: left; }
+        .p-features li { margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; }
+        .p-features li i { color: var(--gold-glow); }
+
+        .book-btn {
+            background: var(--gold-glow); color: var(--royal-blue);
+            width: 100%; padding: 12px; border: none; border-radius: 10px;
+            font-weight: 700; text-transform: uppercase; cursor: pointer; transition: 0.3s;
+        }
+        .book-btn:hover { background: white; letter-spacing: 1px; }
+
+        /* Additional Info */
+        .benefits { margin-top: 50px; background: rgba(0,0,0,0.3); border-radius: 20px; padding: 40px; }
+        .benefits h2 { text-align: center; color: var(--gold-glow); margin-bottom: 30px; font-family: 'Amiri', serif; }
+        .benefit-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+        .b-item { width: 250px; text-align: center; }
+        .b-item i { font-size: 2.5rem; color: var(--gold-glow); margin-bottom: 15px; }
+
+        footer { text-align: center; padding: 40px; border-top: 1px solid var(--gold-dark); margin-top: 50px; color: #aaa; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header { padding: 15px 5%; flex-direction: column; gap: 15px; }
+            .packages-hero h1 { font-size: 2.2rem; }
+            section { padding: 40px 5%; }
+            .p-card.featured { transform: scale(1); margin: 20px 0; }
+            .p-card.featured:hover { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">JOURNEY WITH <span>GOD BLESSING</span></a>
+        <a href="index.html" class="back-btn"><i class="fas fa-home"></i> Home</a>
+    </header>
+
+    <div class="packages-hero">
+        <h1>Hamare Mubarak Packages</h1>
+        <p>Aapki zaroorat aur budget ke mutabiq behtreen intezam.</p>
+    </div>
+
+    <section>
+        <div class="package-grid">
+            
+            <!-- Economy Package -->
+            <div class="p-card">
+                <h2 style="color: var(--gold-glow); font-family: 'Amiri', serif;">Economy Saver</h2>
+                <div class="price-tag">185k <span>/ person</span></div>
+                <ul class="p-features">
+                    <li><i class="fas fa-check-circle"></i> 15 Days (7 Makkah / 8 Madinah)</li>
+                    <li><i class="fas fa-check-circle"></i> 800m to 1km from Haram</li>
+                    <li><i class="fas fa-check-circle"></i> Shared Quad Rooms</li>
+                    <li><i class="fas fa-check-circle"></i> Umrah Visa & Insurance</li>
+                    <li><i class="fas fa-check-circle"></i> Ziyarat of Holy Places</li>
+                </ul>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <!-- Standard Package (Featured) -->
+            <div class="p-card featured">
+                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--gold-glow); color: var(--royal-blue); padding: 5px 20px; border-radius: 20px; font-weight: bold; font-size: 0.8rem;">MOST POPULAR</div>
+                <h2 style="color: var(--gold-glow); font-family: 'Amiri', serif;">Standard Gold</h2>
+                <div class="price-tag">240k <span>/ person</span></div>
+                <ul class="p-features">
+                    <li><i class="fas fa-check-circle"></i> 15 Days Total</li>
+                    <li><i class="fas fa-check-circle"></i> 300m - 400m from Haram</li>
+                    <li><i class="fas fa-check-circle"></i> 4-Star Hotel Experience</li>
+                    <li><i class="fas fa-check-circle"></i> Breakfast & Dinner Included</li>
+                    <li><i class="fas fa-check-circle"></i> Luxury Bus Transport</li>
+                </ul>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <!-- VIP Package -->
+            <div class="p-card">
+                <h2 style="color: var(--gold-glow); font-family: 'Amiri', serif;">Executive VIP</h2>
+                <div class="price-tag">320k <span>/ person</span></div>
+                <ul class="p-features">
+                    <li><i class="fas fa-check-circle"></i> 21 Days (Extended Stay)</li>
+                    <li><i class="fas fa-check-circle"></i> Zero Meter (Haram View Hotels)</li>
+                    <li><i class="fas fa-check-circle"></i> 5-Star Front Row Accommodation</li>
+                    <li><i class="fas fa-check-circle"></i> Full Board (3 Meals Daily)</li>
+                    <li><i class="fas fa-check-circle"></i> Private SUV Ziyarat</li>
+                </ul>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+        </div>
+
+        <!-- Benefits for all packages -->
+        <div class="benefits">
+            <h2>Hamare Har Package Mein Shamil Hai</h2>
+            <div class="benefit-list">
+                <div class="b-item">
+                    <i class="fas fa-briefcase-medical"></i>
+                    <h3>Full Medical Insurance</h3>
+                    <p>Safar ke doran kisi bhi emergency ke liye mukammal tahaffuz.</p>
+                </div>
+                <div class="b-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Ground Support</h3>
+                    <p>Saudi Arab mein hamara staff har waqt aapki madad ke liye hazir hai.</p>
+                </div>
+                <div class="b-item">
+                    <i class="fas fa-mosque"></i>
+                    <h3>Ziyarat Guide</h3>
+                    <p>Scholar ke sath tamam muqaddas maqamat ki mufassil ziyarat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
